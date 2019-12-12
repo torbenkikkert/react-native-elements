@@ -72,8 +72,6 @@ const SocialIcon = props => {
     ...attributes
   } = props;
 
-  const Icon = require('react-native-vector-icons/FontAwesome')
-
   return (
     <Component
       {...attributes}
@@ -99,12 +97,6 @@ const SocialIcon = props => {
       ])}
     >
       <View style={styles.wrapper}>
-        <Icon
-          style={StyleSheet.flatten([iconStyle && iconStyle])}
-          color={light ? colors[type] : iconColor}
-          name={type}
-          size={iconSize}
-        />
         {button && title && (
           <Text
             style={StyleSheet.flatten([

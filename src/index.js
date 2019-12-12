@@ -43,7 +43,7 @@ import {
   ThemeContext,
   withTheme,
 } from './config';
-import getIconType, { registerCustomIconType } from './helpers/getIconType';
+import { registerCustomIconType } from './helpers/getIconType';
 import normalize from './helpers/normalizeText';
 
 const AirbnbRating = withTheme(BaseAirbnbRating, 'AirbnbRating');
@@ -65,7 +65,6 @@ export {
   SearchBar,
   Icon,
   colors,
-  getIconType,
   registerCustomIconType,
   normalize,
   Tile,

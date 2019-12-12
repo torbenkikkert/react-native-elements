@@ -110,10 +110,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/react-native-elements/react-native-elements.git"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

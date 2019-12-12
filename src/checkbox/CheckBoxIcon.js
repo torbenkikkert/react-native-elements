@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getIconType from '../helpers/getIconType';
 
 const CheckBoxIcon = ({
   checked,
@@ -21,20 +20,7 @@ const CheckBoxIcon = ({
     return uncheckedIcon;
   }
 
-  const FAIcon = require('react-native-vector-icons/FontAwesome')
-  
-  const VectorIcon = iconType ? getIconType(iconType) : FAIcon;
-
-  return (
-    <VectorIcon
-      color={checked ? checkedColor : uncheckedColor}
-      name={checked ? checkedIcon : uncheckedIcon}
-      size={size || 24}
-      style={{ minWidth: size || 24 }}
-      onLongPress={onLongIconPress}
-      onPress={onIconPress}
-    />
-  );
+  return null;
 };
 
 CheckBoxIcon.propTypes = {

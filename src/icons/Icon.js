@@ -8,7 +8,6 @@ import {
   Text as NativeText,
 } from 'react-native';
 
-import getIconType from '../helpers/getIconType';
 import { ViewPropTypes, withTheme } from '../config';
 
 const Icon = props => {
@@ -30,7 +29,6 @@ const Icon = props => {
     ...attributes
   } = props;
 
-  const IconComponent = getIconType(type);
   const getBackgroundColor = () => {
     if (reverse) {
       return color;
@@ -62,18 +60,7 @@ const Icon = props => {
         ])}
         {...onPress && { disabled }}
         onPress={onPress}
-      >
-        <IconComponent
-          testID="iconIcon"
-          style={StyleSheet.flatten([
-            { backgroundColor: 'transparent' },
-            iconStyle && iconStyle,
-          ])}
-          size={size}
-          name={name}
-          color={reverse ? reverseColor : color}
-        />
-      </Component>
+      />
     </View>
   );
 };
