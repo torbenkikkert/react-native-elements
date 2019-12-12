@@ -9,7 +9,7 @@ import {
   Text as NativeText,
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+const Icon = React.lazy(() => import('react-native-vector-icons/FontAwesome'));
 import Text from '../text/Text';
 import fonts from '../config/fonts';
 

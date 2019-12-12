@@ -1,15 +1,15 @@
-import ZocialIcon from 'react-native-vector-icons/Zocial';
-import OcticonIcon from 'react-native-vector-icons/Octicons';
-import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
-import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import Ionicon from 'react-native-vector-icons/Ionicons';
-import FoundationIcon from 'react-native-vector-icons/Foundation';
-import EvilIcon from 'react-native-vector-icons/EvilIcons';
-import EntypoIcon from 'react-native-vector-icons/Entypo';
-import FAIcon from 'react-native-vector-icons/FontAwesome';
-import SimpleLineIcon from 'react-native-vector-icons/SimpleLineIcons';
-import FeatherIcon from 'react-native-vector-icons/Feather';
-import AntIcon from 'react-native-vector-icons/AntDesign';
+const ZocialIcon = React.lazy(() => import('react-native-vector-icons/Zocial'));
+const OcticonIcon = React.lazy(() => import('react-native-vector-icons/Octicons'));
+const MaterialIcon = React.lazy(() => import('react-native-vector-icons/MaterialIcons'));
+const MaterialCommunityIcon = React.lazy(() => import('react-native-vector-icons/MaterialCommunityIcons'));
+const Ionicon = React.lazy(() => import('react-native-vector-icons/Ionicons'));
+const FoundationIcon = React.lazy(() => import('react-native-vector-icons/Foundation'));
+const EvilIcon = React.lazy(() => import('react-native-vector-icons/EvilIcons'));
+const EntypoIcon = React.lazy(() => import('react-native-vector-icons/Entypo'));
+const FAIcon = React.lazy(() => import('react-native-vector-icons/FontAwesome'));
+const SimpleLineIcon = React.lazy(() => import('react-native-vector-icons/SimpleLineIcons'));
+const FeatherIcon = React.lazy(() => import('react-native-vector-icons/Feather'));
+const AntIcon = React.lazy(() => import('react-native-vector-icons/AntDesign'));
 
 const customIcons = {};
 

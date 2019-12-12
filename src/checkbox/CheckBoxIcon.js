@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FAIcon from 'react-native-vector-icons/FontAwesome';
+const FAIcon = React.lazy(() => import('react-native-vector-icons/FontAwesome'));
 
 import getIconType from '../helpers/getIconType';
 
