@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-const FAIcon = React.lazy(() => import('react-native-vector-icons/FontAwesome'));
-
 import getIconType from '../helpers/getIconType';
 
 const CheckBoxIcon = ({
@@ -23,6 +21,8 @@ const CheckBoxIcon = ({
     return uncheckedIcon;
   }
 
+  const FAIcon = require('react-native-vector-icons/FontAwesome')
+  
   const VectorIcon = iconType ? getIconType(iconType) : FAIcon;
 
   return (

@@ -8,8 +8,6 @@ import {
   ActivityIndicator,
   Text as NativeText,
 } from 'react-native';
-
-const Icon = React.lazy(() => import('react-native-vector-icons/FontAwesome'));
 import Text from '../text/Text';
 import fonts from '../config/fonts';
 
@@ -73,6 +71,8 @@ const SocialIcon = props => {
     underlayColor,
     ...attributes
   } = props;
+
+  const Icon = require('react-native-vector-icons/FontAwesome')
 
   return (
     <Component
